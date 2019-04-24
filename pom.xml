@@ -82,10 +82,8 @@
                         </goals>
                         <phase>prepare-package</phase>
                         <configuration>
-                            <executable>npm</executable>
-                            <arguments>
-                                <argument>install</argument>
-                            </arguments>
+                            <executable>yarn</executable>
+
                         </configuration>
                     </execution>
 
