@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 
 import axios from 'axios'
+import Vuelidate from 'vuelidate'
 
 Vue.config.productionTip = false
 
@@ -15,6 +16,8 @@ axios.interceptors.response.use(
     return Promise.reject(error)
   }
 )
+
+Vue.use(Vuelidate)
 
 new Vue({
   router,
